@@ -1,0 +1,117 @@
+<section class="breadcrumb breadcrumb_bg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="breadcrumb_iner">
+                    <div class="breadcrumb_iner_item">
+                        <p>Products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="new_arrival section_padding" >
+    <div class="container-fluid" >
+        <div class="row" >
+            <div class="col-lg-12">
+                <div class="new_arrival_iner filter-container">
+                    <div class="single_arrivel_item weidth_ mix shoes"*ngFor="let Product of Products" >
+                        <img src="{{Product.img}}" alt="#">
+                        <!-- <img src="/assets/img/arrivel/arrivel_5.png" alt="#">-->
+                        <div class="hover_text">
+                            <p>{{Product.category}}</p>
+                            <a href="single-product.html">
+                                <h3>{{Product.name}}</h3>
+                            </a>
+                            <div class="rate_icon">
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                            </div>
+                            <h5>{{Product.price | currency}}</h5>
+                            <div class="social_icon">
+                                <a href="#"><i class="ti-heart"></i></a>
+                                <a (click)="addToCart(Product)" ><i class="ti-bag " ></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+        
+                    <!--
+                    <div class="single_arrivel_item weidth_3 mix women men">
+                        <img src="/assets/img/arrivel/arrivel_4.png" alt="#">
+                        <div class="hover_text">
+                            <p>Canvas</p>
+                            <a href="single-product.html">
+                                <h3>Lorem Canvas Low-Top Sneaker</h3>
+                            </a>
+                            <div class="rate_icon">
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                            </div>
+                            <h5>$150</h5>
+                            <div class="social_icon">
+                                <a href="#"><i class="ti-heart"></i></a>
+                                <a href="#"><i class="ti-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_arrivel_item weidth_2 mix men women">
+                        <img src="/assets/img/arrivel/arrivel_1.png" alt="#">
+                        <div class="hover_text">
+                            <p>Canvas</p>
+                            <a href="single-product.html">
+                                <h3>Lorem Canvas Low-Top Sneaker</h3>
+                            </a>
+                            <div class="rate_icon">
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                            </div>
+                            <h5>$150</h5>
+                            <div class="social_icon">
+                                <a href="#"><i class="ti-heart"></i></a>
+                                <a href="#"><i class="ti-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_arrivel_item weidth_1 mix shoes men">
+                        <img src="/assets/img/arrivel/arrivel_6.png" alt="#">
+                        <div class="hover_text">
+                            <p>Canvas</p>
+                            <a href="single-product.html">
+                                <h3>Lorem Canvas Low-Top Sneaker</h3>
+                            </a>
+                            <div class="rate_icon">
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                                <a href="#"> <i class="fas fa-star"></i> </a>
+                            </div>
+                            <h5>$150</h5>
+                            <div class="social_icon">
+                                <a href="#"><i class="ti-heart"></i></a>
+                                <a href="#"><i class="ti-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
